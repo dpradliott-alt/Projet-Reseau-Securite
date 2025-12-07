@@ -1,7 +1,7 @@
 
 # Projet Réseau & Sécurité - Master SDR
 
-Ce dépôt regroupe trois travaux pratiques réalisés dans le cadre de la formation de Master SDR (Sécurité des Données et des Réseaux). Chaque TP constitue une étape dans la construction d'une architecture réseau complète avec des services essentiels et sécurisés : firewall, messagerie, VPN.
+Ce dépôt regroupe quatre travaux pratiques réalisés dans le cadre de la formation de Master SDR (Sécurité des Données et des Réseaux). Chaque TP constitue une étape dans la construction d'une architecture réseau complète avec des services essentiels et sécurisés : firewall, messagerie, VPN.
 
 ## Objectifs généraux
 
