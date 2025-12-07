@@ -12,17 +12,8 @@ Appliquer des mécanismes de sécurité : NAT, tunnel SSH, chiffrement TLS, VPN
 Manipuler les outils : pfSense, Postfix, Dovecot, OpenVPN, Wireshark
 
 Contenu du dépôt
-.
-├── TP2-PfSense
-│   ├── TP2-Pfsense.docx         # Rapport du TP2
-│   └── TP2-Pfsense.md           # Version texte lisible / annotée
-├── TP3-Mail
-│   ├── TP3-SERVEUR MAIL.pdf     # Rapport du TP3
-│   └── TP3-Mail.md             # Version texte + captures + configs postfix/dovecot
-├── TP4-VPN
-│   ├── TP4 OpenVPN terminé.pdf  # Rapport du TP4
-│   └── TP4-VPN.md              # Étapes + test tcpdump + schéma tunnel VPN
-└── README.md                   # Ce fichier
+
+
 
 Détail des TP
 TP2 - Configuration de pfSense (Firewall / NAT / DNS)
