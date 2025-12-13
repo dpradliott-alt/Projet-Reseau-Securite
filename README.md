@@ -1,5 +1,5 @@
 
-# Projet Réseau & Sécurité - Master SDR
+# Projet Réseau & Sécurité - Licence SDR
 
 Ce dépôt regroupe quatre travaux pratiques réalisés dans le cadre de la formation de Master SDR (Sécurité des Données et des Réseaux). Chaque TP constitue une étape dans la construction d'une architecture réseau complète avec des services essentiels et sécurisés : firewall, messagerie, VPN.
 
@@ -15,24 +15,24 @@ Ce dépôt regroupe quatre travaux pratiques réalisés dans le cadre de la form
 ## Contenu du dépôt
 
 ```
-.
-├── TP2-PfSense
-│   ├── TP2-Pfsense.docx         # Rapport du TP2
-│   └── TP2-Pfsense.md           # Version texte lisible / annotée
-├── TP3-Mail
-│   ├── TP3-SERVEUR MAIL.pdf     # Rapport du TP3
-│   └── TP3-Mail.md              # Version texte + captures + configs postfix/dovecot
-├── TP4-VPN
-│   ├── TP4 OpenVPN terminé.pdf  # Rapport du TP4
-│   └── TP4-VPN.md               # Étapes + test tcpdump + schéma tunnel VPN
-└── README.md                   # Ce fichier
+
+|___ TP1-PfSense
+│   |__TP1-Pfsense.docx         # Rapport du TP2
+│   |__TP1-Pfsense.md           # Version texte lisible / annotée
+|__ TP2-Mail
+│   |__ TP2-SERVEUR MAIL.pdf     # Rapport du TP3
+│   |__ TP2-Mail.md              # Version texte lisible
+|__ TP3-VPN
+│   |__ TP3 OpenVPN terminé.pdf  # Rapport du TP4
+│   |__ TP3-VPN.md               # Étapes + test tcpdump + schéma tunnel VPN
+|__ README.md                   # Ce fichier
 ```
 
 ---
 
 ## Détail des TP
 
-### TP2 - Configuration de pfSense (Firewall / NAT / DNS)
+### TP1 - Configuration de pfSense (Firewall / NAT / DNS)
 
 * Configuration LAN/WAN sur pfSense
 * Définition des règles firewall entrantes/sortantes
@@ -43,7 +43,7 @@ Ce dépôt regroupe quatre travaux pratiques réalisés dans le cadre de la form
 
 ---
 
-### TP3 - Serveur Mail (Postfix / Dovecot / GPG / IMAP)
+### TP2 - Serveur Mail (Postfix / Dovecot / GPG / IMAP)
 
 * Installation d'un serveur mail local (Postfix en MTA, Dovecot en MDA)
 * Configuration des boîtes locales pour utilisateurs (alice, bob)
@@ -55,7 +55,7 @@ Ce dépôt regroupe quatre travaux pratiques réalisés dans le cadre de la form
 
 ---
 
-### TP4 - VPN avec pfSense et OpenVPN
+### TP3 - VPN avec pfSense et OpenVPN
 
 * Mise en place d'un accès OpenVPN depuis l'extérieur (client .ovpn)
 * Test du tunnel VPN depuis une machine physique (Windows)
