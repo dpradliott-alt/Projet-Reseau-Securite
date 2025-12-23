@@ -31,17 +31,17 @@ Mettre en place un routeur pfSense fonctionnel dans un réseau local avec plusie
   * Accessible depuis Kali via : http://10.10.10.1
   * Ou depuis mon réseau domestique en 192.168.1.130
  
-  ![Interfaces WAN/LAN](captures/TP1/InterfacesPf.JPG)
+  ![Interfaces WAN/LAN](../captures/TP1/InterfacesPf.JPG)
 
 ## Configuration initiale de pfSense
 
-* Assignation des interfaces WAN (vmx0) et LAN (vmx1)
+* Assignation des interfaces WAN (vtnet0) et LAN (vtnet1)
 * Attribution manuelle des IP
 * Désactivation du DHCP sur WAN
 * Activation du DHCP sur LAN
 * Test de ping entre pfSense → Kali et Kali → pfSense
 
-![Dashboard pfSense](captures/TP1/pfsense_dashboard.png)
+![Dashboard pfSense](../captures/TP1/.png)
 
 ## Configuration des règles de pare-feu
 
