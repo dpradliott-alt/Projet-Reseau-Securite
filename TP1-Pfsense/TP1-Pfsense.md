@@ -10,6 +10,11 @@ _**TP réalisé avec Proxmox 8.4.0**_
 
 ## Infrastructure mise en place
 
+
+![Topologie](../captures/TP1/TopologieTP1.PNG)
+
+
+
 * **lubuntu** (serveur apache2 / futur serveur mail)
 
   * LAN : 10.10.10.10/24
