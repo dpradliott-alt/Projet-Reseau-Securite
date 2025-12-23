@@ -1,4 +1,4 @@
-# TP2 - Configuration de pfSense
+# TP1 - Configuration de pfSense
 
 ## Objectif
 
