@@ -4,6 +4,11 @@
 
 Mettre en place un serveur de messagerie interne sécurisé avec Postfix, Dovecot, accès IMAP chiffré, tunnelisation SSH et chiffrement des e-mails via GPG, dans une infrastructure préexistante basée sur pfSense.
 
+![Topologie TP2](../captures/TP2/TopologieTP2.JPG)
+
+
+
+
 ---
 
 ## Prérequis
@@ -31,6 +36,8 @@ sudo apt install postfix mailutils
 * `mydomain = cs.cr`
 * `mynetworks = 127.0.0.0/8, 10.10.10.0/24, 192.168.1.0/24`
 * `inet_interfaces = all`
+
+![maincf](../captures/TP2/postfix(5))
 
 Redémarrage :
 
