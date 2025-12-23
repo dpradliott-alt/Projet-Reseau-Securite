@@ -41,7 +41,8 @@ Mettre en place un routeur pfSense fonctionnel dans un réseau local avec plusie
 * Activation du DHCP sur LAN
 * Test de ping entre pfSense → Kali et Kali → pfSense
 
-![Dashboard pfSense](../captures/TP1/.png)
+![DHCP configuration](../captures/TP1/DHCP conf.JPG)
+
 
 ## Configuration des règles de pare-feu
 
