@@ -4,9 +4,17 @@
 
 Mettre en place un routeur pfSense fonctionnel dans un réseau local avec plusieurs interfaces réseaux, une interface d'administration, un LAN, et une machine cliente Kali pour tester la connectivité et les règles de pare-feu.
 
+
+
 ---
 
 ## Infrastructure mise en place
+
+* **lubuntu** (serveur apache2 / futur serveur mail)
+
+  * LAN : 10.10.10.10/24
+  * Gateway : 10.10.10.1/24
+
 
 * **pfSense** (routeur virtuel)
 
@@ -20,7 +28,8 @@ Mettre en place un routeur pfSense fonctionnel dans un réseau local avec plusie
 
 * **Interface Web de pfSense**
 
-  * Accessible depuis Kali via : [http://10.10.10.1](http://10.10.10.1)
+  * Accessible depuis Kali via : http://10.10.10.1
+  * Ou depuis mon réseau domestique en 192.168.1.130
 
 ## Configuration initiale de pfSense
 
