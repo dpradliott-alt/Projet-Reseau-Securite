@@ -4,7 +4,7 @@
 
 Mettre en place un routeur pfSense fonctionnel dans un réseau local avec plusieurs interfaces réseaux, une interface d'administration, un LAN, et une machine cliente Kali pour tester la connectivité et les règles de pare-feu.
 
-
+_**TP réalisé avec Proxmox 8.4.0**_
 
 ---
 
@@ -52,11 +52,14 @@ Mettre en place un routeur pfSense fonctionnel dans un réseau local avec plusie
 
 * Autorisation des connexions entrantes sur HTTP/HTTPS depuis le réseau domestique
 
+
+![FirewallWan](../captures/TP1/rulesWAN.JPG)
+
 ### Règles LAN
 
 * Accès total sortant depuis LAN (par défaut)
 
-![Firewall Rules](captures/firewall_rules.png)
+![FirewalLLAN](captures/rulesLAN.JPG)
 
 ## Test de connectivité
 
@@ -65,12 +68,18 @@ Depuis Kali (10.10.10.50) :
 * Accès à l'interface web de pfSense : OK
 * Ping vers 192.168.1.33 (réseau domestique) : OK
 
-## Sécurisation et mot de passe
+Depuis lubuntu (10.10.10.10) :
 
-* Modification du mot de passe admin de pfSense (alerte rouge résolue)
+* Accès à l'interface web de pfSense : OK
+* Ping vers 192.168.1.33 : OK
 
-![Password Warning](captures/password_warning.png)
+Depuis réseau domestique (192.168.1.33) :
+
+* Accès à l'interface web : OK
+* Ping vers LAN : OK
+
 
 ## Conclusion
 
 TP1 posait les bases : installation, réseaux LAN/WAN, règles de pare-feu, et connectivité entre Kali et le monde extérieur via pfSense. C'est le socle pour les TP suivants sur le mail (TP2) et le VPN (TP3).
+
