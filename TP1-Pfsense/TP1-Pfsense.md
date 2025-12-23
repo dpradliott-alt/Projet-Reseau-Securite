@@ -11,7 +11,8 @@ _**TP réalisé avec Proxmox 8.4.0**_
 ## Infrastructure mise en place
 
 
-![Topologie](../captures/TP1/TopologieTP1.PNG)
+![Topologie](../captures/TP1/TopologieTP1.JPG)
+
 
 
 
