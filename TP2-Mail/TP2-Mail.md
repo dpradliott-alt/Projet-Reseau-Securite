@@ -205,6 +205,8 @@ Wireshark : tout le trafic IMAP est encapsulé dans SSH (port 22)
 ```bash
 gpg --full-generate-key
 ```
+![telnet](../captures/TP2/gpg(1).JPG)
+
 
 Puis création d'un certificat de révocation :
 
@@ -218,28 +220,44 @@ gpg --output revoke.asc --gen-revoke alice@cs.cr
 gpg --export -a alice@cs.cr > alice_pub.asc
 gpg --import bob_pub.asc
 ```
+![telnet](../captures/TP2/gpg(4).JPG)
+![telnet](../captures/TP2/gpg(6).JPG)
+
 
 ### Envoi d'un message chiffré
 
 ```bash
 gpg --output secret.txt.gpg --encrypt --recipient alice@cs.cr secret.txt
 ```
+![telnet](../captures/TP2/gpg(8).JPG)
 
 Envoi avec ssmtp ou Thunderbird en pièce jointe
+
+![telnet](../captures/TP2/gpg(11).JPG)
 
 ### Déchiffrement
 
 ```bash
 gpg --output msg.txt --decrypt secret.txt.gpg
 ```
+![telnet](../captures/TP2/gpg(13).JPG)
+
 
 ### Signature de message
 
 ```bash
 gpg --clearsign signer.txt
 ```
+![telnet](../captures/TP2/gpg(15).JPG)
+![telnet](../captures/TP2/gpg(16).JPG)
+
 
 Et vérification : `gpg --verify signer.txt.asc`
+
+![telnet](../captures/TP2/gpg(17).JPG)
+![telnet](../captures/TP2/gpg(18).JPG)
+![telnet](../captures/TP2/gpg(19).JPG)
+![telnet](../captures/TP2/gpg(20).JPG)
 
 ---
 
