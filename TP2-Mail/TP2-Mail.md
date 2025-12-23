@@ -37,7 +37,7 @@ sudo apt install postfix mailutils
 * `mynetworks = 127.0.0.0/8, 10.10.10.0/24, 192.168.1.0/24`
 * `inet_interfaces = all`
 
-![maincf](../captures/TP2/postfix(5))
+![maincf](../captures/TP2/Postfix(5).JPG)
 
 Redémarrage :
 
@@ -56,6 +56,9 @@ adduser bob
 
 ### Envoi via `mail` ou `telnet`
 
+![telnet](../captures/TP2/Postfix(9).JPG)
+
+
 ```bash
 telnet 127.0.0.1 25
 EHLO
@@ -70,6 +73,8 @@ QUIT
 
 Vérification dans `/var/mail/alice` ou via `su - alice && mail`
 
+![telnet](../captures/TP2/Postfix(10).JPG)
+
 ---
 
 ## 3. Aliases mail
@@ -77,10 +82,14 @@ Vérification dans `/var/mail/alice` ou via `su - alice && mail`
 Modifier `/etc/aliases` :
 
 ```ini
-bob: alice
+Darksasuke: alice
 ```
 
 Puis : `newaliases`
+
+
+![telnet](../captures/TP2/Postfix(12).JPG)
+![telnet](../captures/TP2/Postfix(13).JPG)
 
 ---
 
@@ -101,8 +110,14 @@ rewriteDomain=cs.cr
 hostname=kali.cs.cr
 ```
 
+![telnet](../captures/TP2/Postfix(15).JPG)
+
+
 Ajout dans `/etc/hosts` : `10.10.10.10 cs.cr`
 Test via `telnet 10.10.10.10 25`
+
+![telnet](../captures/TP2/Postfix(16).JPG)
+![telnet](../captures/TP2/Postfix(17).JPG)
 
 ---
 
@@ -121,6 +136,10 @@ Vérifier que le port 143 est à l'écoute
 
 Fichier `/etc/dovecot/conf.d/10-ssl.conf` :
 
+![telnet](../captures/TP2/Postfix(19).JPG)
+
+
+
 ```ini
 ssl = yes
 ssl_cert = </etc/ssl/certs/ssl-cert-snakeoil.pem
@@ -134,6 +153,8 @@ openssl s_client -connect localhost:143 -starttls imap
 ```
 
 Puis : `a LOGIN alice motdepasse`
+
+![telnet](../captures/TP2/IMAP(4).JPG)
 
 ---
 
@@ -150,6 +171,8 @@ Configurer le compte :
 * Serveur entrant : `localhost`, Port `2023`
 * Sécurité : STARTTLS
 * Utilisateur : `alice@cs.cr`
+* 
+![telnet](../captures/TP2/IMAP(6).JPG)
 
 ---
 
@@ -166,7 +189,12 @@ Test SSH depuis le WAN :
 ssh -L 2023:localhost:143 alice@192.168.1.130
 ```
 
+![telnet](../captures/TP2/SSH(4).JPG)
+
+
 Wireshark : tout le trafic IMAP est encapsulé dans SSH (port 22)
+
+![telnet](../captures/TP2/Wireshark(2).JPG)
 
 ---
 
