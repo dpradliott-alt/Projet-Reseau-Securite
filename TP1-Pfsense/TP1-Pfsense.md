@@ -59,7 +59,7 @@ _**TP réalisé avec Proxmox 8.4.0**_
 
 * Accès total sortant depuis LAN (par défaut)
 
-![FirewalLLAN](captures/TP1/rulesLAN.JPG)
+![Firewalllan](../captures/TP1/rulesLAN.JPG)
 
 ## Test de connectivité
 
