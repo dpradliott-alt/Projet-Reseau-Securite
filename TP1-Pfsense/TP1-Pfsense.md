@@ -39,9 +39,10 @@ Mettre en place un routeur pfSense fonctionnel dans un réseau local avec plusie
 * Attribution manuelle des IP
 * Désactivation du DHCP sur WAN
 * Activation du DHCP sur LAN
+* IP statique pour le lubuntu 10.10.10.10
 * Test de ping entre pfSense → Kali et Kali → pfSense
 
-![DHCP configuration](../captures/TP1/
+![configuration](../captures/TP1/LANWIZARD.JPG)
 
 
 ## Configuration des règles de pare-feu
