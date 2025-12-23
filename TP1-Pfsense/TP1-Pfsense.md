@@ -31,7 +31,7 @@ Mettre en place un routeur pfSense fonctionnel dans un réseau local avec plusie
   * Accessible depuis Kali via : http://10.10.10.1
   * Ou depuis mon réseau domestique en 192.168.1.130
  
-  ![Interfaces WAN/LAN](../captures/TP1/dashboard.JPG)
+  ![Interfaces WAN/LAN](../captures/TP1/InterfacesPf.JPG)
 
 ## Configuration initiale de pfSense
 
@@ -43,7 +43,7 @@ Mettre en place un routeur pfSense fonctionnel dans un réseau local avec plusie
 * IP statique pour le lubuntu 10.10.10.10
 * Test de ping entre pfSense → Kali et Kali → pfSense
 
-![configuration](../captures/TP1/LANWIZARD.JPG)
+![configuration](../captures/TP1/dashboard.JPG)
 
 
 ## Configuration des règles de pare-feu
