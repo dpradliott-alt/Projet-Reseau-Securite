@@ -41,6 +41,8 @@ Ce dépôt regroupe quatre travaux pratiques réalisés dans le cadre de la form
 
 **Compétences :** NAT, Firewalling, sous-réseautage, filtrage IP, port forwarding
 
+[Voir TP1](../TP1-Pfsense/TP1-Pfsense.md)
+
 ---
 
 ### TP2 - Serveur Mail (Postfix / Dovecot / GPG / IMAP)
@@ -53,6 +55,9 @@ Ce dépôt regroupe quatre travaux pratiques réalisés dans le cadre de la form
 
 **Compétences :** Mails (MTA/MDA), IMAP/SMTP, alias utilisateurs, chiffrement GPG, tunnel SSH, Thunderbird
 
+[Voir TP2](../TP2-Mail/TP1-Mail.md)
+
+
 ---
 
 ### TP3 - VPN avec pfSense et OpenVPN
@@ -63,6 +68,9 @@ Ce dépôt regroupe quatre travaux pratiques réalisés dans le cadre de la form
 * Détection active sur LAN via Wireshark
 
 **Compétences :** VPN OpenVPN (mode client/server), export .ovpn, tcpdump, Wireshark, routage VPN
+
+[Voir TP3](../TP3-VPN/TP3-VPN.md)
+
 
 ---
 
