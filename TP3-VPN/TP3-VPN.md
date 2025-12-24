@@ -52,6 +52,8 @@ Une machine cliente **Windows** située à l’extérieur (sur Internet) sera co
 * Connexion avec identifiants alice
 * Attribution d'une IP tunnel (ex : 192.168.200.2)
 
+![IPVPN](../captures/TP3/IPVPN.JPG)
+
 ---
 
 ## Tests de connectivité
