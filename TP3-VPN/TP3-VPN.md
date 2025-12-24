@@ -12,6 +12,9 @@ Mettre en place un VPN **OpenVPN** sur pfSense afin de fournir un accès distant
 
 ## Infrastructure
 
+![Topologie](../captures/TP3/TopologieTP3.JPG)
+
+
 L’infrastructure de test se compose d’un routeur/pare-feu **pfSense** et de deux réseaux : le réseau **WAN** (côté Internet) et le réseau **LAN** interne. Le **pfSense** possède une interface WAN (connectée à Internet ) et une interface LAN connectée au réseau local **10.10.10.0/24**. Le serveur OpenVPN sera hébergé sur pfSense et utilisera un **réseau de tunnel VPN** dédié (`192.168.200.0/24`) pour attribuer des adresses IP virtuelles aux clients VPN.
 
 Une machine cliente **Windows** située à l’extérieur (sur Internet) sera configurée pour se connecter au VPN. Lors de la connexion, pfSense attribuera au client une adresse IP dans le réseau du tunnel (par exemple **192.168.200.2**), lui permettant de communiquer avec le LAN interne **10.10.10.0/24**.
@@ -55,7 +58,10 @@ Une machine cliente **Windows** située à l’extérieur (sur Internet) sera co
 
 * `ipconfig` : vérifier IP VPN attribuée
 * `ping 10.10.10.10` : test de communication avec le LAN
-* Wireshark : observer trafic UDP 1194 chiffré uniquement
+
+
+
+
 
 ---
 
@@ -64,6 +70,12 @@ Une machine cliente **Windows** située à l’extérieur (sur Internet) sera co
 * Authentification forte (certificat + login/password)
 * Chiffrement TLS + AES-256-GCM
 * Preuve de chiffrement via Wireshark sur WAN
+
+
+![Topologie](../captures/TP3/Wireshark(1).JPG)
+
+(On voit que le tunnel est chiffré entre 192.168.1.33(réseau local) et 192.168.1.4(Proxmox))
+Wireshark à du mal à identifier OpenVPN et identifie Wireguard à la place --> Bug connu.
 
 ---
 
