@@ -41,7 +41,7 @@ Ce dépôt regroupe quatre travaux pratiques réalisés dans le cadre de la form
 
 **Compétences :** NAT, Firewalling, sous-réseautage, filtrage IP, port forwarding
 
-[Voir TP1](../TP1-Pfsense/TP1-Pfsense.md)
+[Voir TP1](Projet-Reseau-Securite/TP1-Pfsense/TP1-Pfsense.md)
 
 ---
 
@@ -55,7 +55,7 @@ Ce dépôt regroupe quatre travaux pratiques réalisés dans le cadre de la form
 
 **Compétences :** Mails (MTA/MDA), IMAP/SMTP, alias utilisateurs, chiffrement GPG, tunnel SSH, Thunderbird
 
-[Voir TP2](../TP2-Mail/TP1-Mail.md)
+[Voir TP2](Projet-Reseau-Securite/TP2-Mail/TP1-Mail.md)
 
 
 ---
@@ -69,7 +69,7 @@ Ce dépôt regroupe quatre travaux pratiques réalisés dans le cadre de la form
 
 **Compétences :** VPN OpenVPN (mode client/server), export .ovpn, tcpdump, Wireshark, routage VPN
 
-[Voir TP3](../TP3-VPN/TP3-VPN.md)
+[Voir TP3](Projet-Reseau-Securite/TP3-VPN/TP3-VPN.md)
 
 
 ---
