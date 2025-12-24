@@ -24,15 +24,28 @@ Une machine cliente **Windows** située à l’extérieur (sur Internet) sera co
 ## Configuration sur pfSense
 
 1. Création de l'autorité de certification (CA)
+
+![IPVPN](../captures/TP3/PKI(3).JPG)
+
 2. Génération des certificats serveur et client
+
+![IPVPN](../captures/TP3/PKI(4).JPG)
+
 3. Création d'un utilisateur VPN avec certificat
+
+![IPVPN](../captures/TP3/CreateUser(3).JPG)
+
 4. Assistant de configuration OpenVPN :
 
    * Mode Remote Access (SSL/TLS + User Auth)
    * Tunnel Network : 192.168.200.0/24
    * Local Network : 10.10.10.0/24
    * Port : UDP 1194
-   * DNS : 10.10.10.1 
+   * DNS : 10.10.10.1
+
+![IPVPN](../captures/TP3/VPN(3.2).JPG) 
+![IPVPN](../captures/TP3/VPN(5).JPG)
+
 5. Création automatique des règles firewall via l'assistant
 
 ---
@@ -50,9 +63,12 @@ Une machine cliente **Windows** située à l’extérieur (sur Internet) sera co
 * Installation d'OpenVPN Connect ou GUI
 * Importation du fichier .ovpn
 * Connexion avec identifiants alice
+
+![AuthentificationVPN](../captures/TP3/Authentification.JPG)
+
+
 * Attribution d'une IP tunnel (ex : 192.168.200.2)
 
-![IPVPN](../captures/TP3/IPVPN.JPG)
 
 ---
 
@@ -61,7 +77,9 @@ Une machine cliente **Windows** située à l’extérieur (sur Internet) sera co
 * `ipconfig` : vérifier IP VPN attribuée
 * `ping 10.10.10.10` : test de communication avec le LAN
 
+![IPVPN](../captures/TP3/IPVPN.JPG)
 
+![IPVPN](../captures/TP3/VPN(11).JPG)
 
 
 
@@ -78,6 +96,10 @@ Une machine cliente **Windows** située à l’extérieur (sur Internet) sera co
 
 (On voit que le tunnel est chiffré entre 192.168.1.33(réseau local) et 192.168.1.4(Proxmox))
 Wireshark à du mal à identifier OpenVPN et identifie Wireguard à la place --> Bug connu.
+
+![IPVPN](../captures/TP3/VPN(13).JPG)
+
+(On voit que le port UDP 1194 est bien utilisé lors de la liaison)
 
 ---
 
