@@ -69,7 +69,7 @@ Ce dépôt regroupe quatre travaux pratiques réalisés dans le cadre de la form
 
 **Compétences :** VPN OpenVPN (mode client/server), export .ovpn, tcpdump, Wireshark, routage VPN
 
-[Voir TP3](Projet-Reseau-Securite/TP3-VPN/TP3-VPN.md)
+[Voir TP3](TP3-VPN/TP3-VPN.md)
 
 
 ---
